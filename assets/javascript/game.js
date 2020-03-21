@@ -36,7 +36,13 @@ var words = [
   'finn',
   'republic',
   'jedi',
-  'mandalorian'
+  'mandalorian',
+  'star wars',
+  'luke',
+  'droid',
+  'sith',
+  'anakin skywalker',
+  'kenobi'
 ];
 
 // // Sets max number of guesses
@@ -62,7 +68,7 @@ var wins = 0;
 resetGame();
 
 // Function to set up onkeypress for user to guess letters
-document.onkeypress = function(event) {
+document.onkeypress = function (event) {
   // Make sure key pressed is alpha character
   if (isAlpha(event.key) && !pauseGame) {
     // Sets letters to uppercase for display
